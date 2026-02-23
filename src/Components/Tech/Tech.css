@@ -1,0 +1,20 @@
+@keyframes slide-animation {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-51.5%);
+    }
+}
+
+@keyframes slide-reverse-animation {
+    from {
+        transform: translateX(-51.58%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+

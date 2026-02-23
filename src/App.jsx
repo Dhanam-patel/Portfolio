@@ -2,6 +2,7 @@ import './App.css'
 import Home from './Components/Home/Home.jsx'
 import About from './Components/About/About.jsx'
 import Tech from './Components/Tech/Tech.jsx'
+import Experience from './Components/Experience/experience.jsx'
 import Grid from './Components/Background/grid.jsx'
 import Stripes from './Components/Background/stripes_animated.jsx'
 function App() {
@@ -26,6 +27,10 @@ function App() {
           <div>
             <Tech />
           </div>
+          <hr className=' w-full text-gray-500' />
+          <div>
+            <Experience />
+          </div>  
         </div>
       </div>
     </div>
