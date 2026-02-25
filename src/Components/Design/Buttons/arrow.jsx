@@ -1,17 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-const Tooltip = (props) => {
+const Arrow = ({ isOpen, tooltipText }) => {
   return (
     <StyledWrapper>
       <div className="tooltip">
-        {/* <button>▲▼▽△</button> */}
-        <button>{props.text}</button>
-        <div className="tooltiptext">{props.tooltipText}</div>
+        <button>
+          <span className={`arrow ${isOpen ? "rotate" : ""}`}>▼</span>
+        </button>
+
+        <div className="tooltiptext">{tooltipText}</div>
       </div>
     </StyledWrapper>
   );
-}
+};
 
 const StyledWrapper = styled.div`
   .tooltip {
@@ -20,19 +22,27 @@ const StyledWrapper = styled.div`
     cursor: pointer;
   }
 
-  .tooltip button {
-    color: #6B7280;
+  button {
+    color: #6b7280;
     border: none;
     padding: 5px 10px;
     border-radius: 13px;
     font-size: 16px;
+    background: transparent;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.1s ease-out;
   }
 
-  .tooltip button:hover {
+  button:hover {
     background-color: #2a2c2f;
-    transform: scale(1.05);
+  }
+
+  .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .arrow.rotate {
+    transform: rotate(180deg);
   }
 
   .tooltip:hover .tooltiptext {
@@ -42,8 +52,7 @@ const StyledWrapper = styled.div`
 
   .tooltiptext {
     visibility: hidden;
-    width: max-content;          /* auto width based on content */
-    max-width: 160px;           /* optional safety */
+    width: max-content;
     font-size: 12px;
     background-color: #333;
     color: #fff;
@@ -51,14 +60,12 @@ const StyledWrapper = styled.div`
     border-radius: 8px;
     padding: 6px 10px;
     position: absolute;
-    z-index: 1;
     bottom: 125%;
-
     left: 50%;
-    transform: translateX(-50%);   /* 🔥 perfect centering */
-
+    transform: translateX(-50%);
     opacity: 0;
     transition: opacity 0.3s;
+    z-index: 10;
   }
 
   .tooltiptext::after {
@@ -66,10 +73,11 @@ const StyledWrapper = styled.div`
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%);   /* center arrow */
+    transform: translateX(-50%);
     border-width: 5px;
     border-style: solid;
     border-color: #333 transparent transparent transparent;
-  }`;
+  }
+`;
 
-export default Tooltip;
+export default Arrow;
