@@ -3,8 +3,8 @@ import Home from './Components/Home/Home.jsx'
 import About from './Components/About/About.jsx'
 import Tech from './Components/Tech/Tech.jsx'
 import Experience from './Components/Experience/experience.jsx'
-import Grid from './Components/Background/grid.jsx'
-import Stripes from './Components/Background/stripes_animated.jsx'
+import Grid from './Components/Design/Background/grid.jsx'
+import Stripes from './Components/Design/Background/stripes_animated.jsx'
 function App() {
 
   return (
@@ -13,7 +13,7 @@ function App() {
       <div>
         <Grid />
       </div>
-      <div className='h-[100vw] w-[50vw] flex justify-center border-x border-gray-500'>
+      <div className='h-[350vh] w-[50vw] flex justify-center border-x border-gray-500'>
         <Stripes />
         <div className='absolute h-fit w-[40vw] border-x border-gray-500 bg-[#121212]'>
           <div>
