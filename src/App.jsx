@@ -5,6 +5,7 @@ import Tech from './Components/Tech/Tech.jsx'
 import Experience from './Components/Experience/experience.jsx'
 import Grid from './Components/Design/Background/grid.jsx'
 import Stripes from './Components/Design/Background/stripes_animated.jsx'
+import { Analytics } from "@vercel/analytics/react"
 function App() {
 
   return (
@@ -33,6 +34,7 @@ function App() {
           </div>  
         </div>
       </div>
+      <Analytics />
     </div>
   )
 }
