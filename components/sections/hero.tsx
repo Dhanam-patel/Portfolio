@@ -71,7 +71,7 @@ export function Hero({ isLoaded = true }: { isLoaded?: boolean }) {
             >
               Building <span className="italic">intelligent</span>
               <br />
-              <span className="text-accent italic">AI systems</span>
+              <span className="text-accent italic">AI & ML systems</span>
             </motion.h1>
 
             {/* Role - Spring Physics Landing */}
