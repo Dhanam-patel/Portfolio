@@ -12,18 +12,29 @@ const projects = [
     year: "2024",
     description: "An AI-powered personal assistant with natural language understanding and context-aware responses.",
     category: "AI/ML Development",
-    tech: "Python, LangChain, FastAPI, React",
+    tech: "Python, FastAPI, LangChain, Gemini AI, PostgreSQL",
     live: "https://dear-ai-yh2c.onrender.com/",
     github: "https://github.com/Dhanam-patel/Dear-AI",
     image: "/Projects/dear_ai.jpg",
     bgColor: "bg-card/40",
   },
   {
-    title: "GHG-Prediction",
+    title: "InsureX AI",
+    year: "2024",
+    description: "AI-driven insurance premium prediction platform utilizing machine learning for accurate cost estimation.",
+    category: "Machine Learning",
+    tech: "React, Tailwind, Python, Scikit-learn, Joblib",
+    live: "https://insurex-ai.vercel.app/",
+    github: "https://github.com/Dhanam-patel/InsureX_AI---Insurance-Premium-Prediction",
+    image: "/Projects/InsureX AI.jpg",
+    bgColor: "bg-card/40",
+  },
+  {
+    title: "Eco Track",
     year: "2024",
     description: "Machine learning model for greenhouse gas emission predictions using environmental data.",
     category: "Machine Learning",
-    tech: "Python, PyTorch, Scikit-learn",
+    tech: "Python, Scikit-learn, Joblib, Pandas",
     live: "https://ghg-prediction.streamlit.app/",
     github: "https://github.com/Dhanam-patel/GHG-Prediction-Edunet-Green-Skill-Internship-",
     image: "/Projects/GHG.jpg",
@@ -34,7 +45,7 @@ const projects = [
     year: "2024",
     description: "A community platform for gamers with real-time features and social interactions.",
     category: "Full-Stack Development",
-    tech: "Next.js, PostgreSQL, Socket.io",
+    tech: "React, Tailwind",
     live: "https://afk-tribe-e-commerce.vercel.app/",
     github: "https://github.com/Dhanam-patel/AFK-Tribe-E-Commerce-",
     image: "/Projects/AFK_Tribe.jpg",
@@ -45,7 +56,7 @@ const projects = [
     year: "2023",
     description: "Gaming platform with modern UI/UX, featuring game discovery and community features.",
     category: "UI/UX Design & Dev",
-    tech: "React, TypeScript, Tailwind",
+    tech: "HTML, CSS, JavaScript",
     live: "https://dhanam-patel.github.io/ArcadiaX---minigames/",
     github: "https://github.com/Dhanam-patel/ArcadiaX---minigames",
     image: "/Projects/ArcadiaX.jpg",
@@ -53,10 +64,12 @@ const projects = [
   },
 ]
 
-function ProjectCard({ 
-  project, 
-  index 
-}: { 
+
+
+function ProjectCard({
+  project,
+  index
+}: {
   project: typeof projects[0]
   index: number
 }) {
@@ -85,7 +98,7 @@ function ProjectCard({
             {project.description}
           </p>
         </div>
-        
+
         <div className="flex flex-wrap gap-x-4 gap-y-3">
           {project.tech.split(', ').map((t) => (
             <span key={t} className="px-3 py-1 text-xs bg-secondary/50 border border-border rounded-full">
@@ -104,14 +117,14 @@ function ProjectCard({
             <Github className="w-4 h-4" />
             Source Code
           </Link>
-          
+
           <Link
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-bold tracking-tight hover:text-accent transition-colors group"
           >
-            View Live Project 
+            View Live Project
             <span className="group-hover:translate-x-1 transition-transform">→</span>
           </Link>
         </div>
