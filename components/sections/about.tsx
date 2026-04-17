@@ -25,7 +25,7 @@ export function About() {
         <div className="mb-20 lg:mb-32">
           <FadeIn>
             <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold font-serif leading-[1.1] tracking-tight max-w-5xl">
-              I&apos;m a developer passionate about crafting <span className="italic">elegant</span> digital experiences
+              I'm an AI & ML engineer building practical, real-world AI systems. <br /> <span className="italic text-lg md:text-2xl lg:text-3xl opacity-80">( aka Athanox )</span>
             </h2>
           </FadeIn>
         </div>
@@ -36,17 +36,12 @@ export function About() {
           <div className="space-y-8">
             <FadeIn delay={0.2}>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                I&apos;m a Full Stack Developer with a passion for building beautiful,
-                functional, and user-centered digital experiences. I believe that
-                understanding the technical foundations leads to more thoughtful designs.
+                I work on AI projects end-to-end — from idea to deployment — and spend most of my time turning concepts into usable products. I’ve built through hackathons (including winning at a national level), internships, and now as a founder working on real products.
               </p>
             </FadeIn>
             <FadeIn delay={0.3}>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                While design is my primary focus, I regularly work with code,
-                believing that understanding the technical foundations leads to more
-                thoughtful designs. My approach combines aesthetic sensibility with
-                practical problem-solving.
+                Currently, I’m building and exploring ideas in AI, working on startup-driven projects, and figuring out how to turn them into something people would actually use or pay for. For me it's less about theory and more about building, testing, and improving until something useful comes out of it.
               </p>
             </FadeIn>
           </div>
