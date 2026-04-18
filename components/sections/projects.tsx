@@ -47,7 +47,7 @@ const projects = [
     category: "UI/UX Design & Dev",
     tech: "React, Tailwind",
     live: "https://legacy-v0.vercel.app/",
-    github: "https://legacy-v0.vercel.app",
+    github: "https://github.com/Dhanam-patel/Legacy_V0",
     image: "/Projects/Legacy_V0.jpg",
     bgColor: "bg-card/40",
   },
