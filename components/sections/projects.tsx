@@ -9,7 +9,7 @@ import { useState } from "react"
 const projects = [
   {
     title: "Dear AI",
-    year: "2024",
+    year: "2025",
     description: "An AI-powered personal assistant with natural language understanding and context-aware responses.",
     category: "AI/ML Development",
     tech: "Python, FastAPI, LangChain, Gemini AI, PostgreSQL",
@@ -20,7 +20,7 @@ const projects = [
   },
   {
     title: "InsureX AI",
-    year: "2024",
+    year: "2025",
     description: "AI-driven insurance premium prediction platform utilizing machine learning for accurate cost estimation.",
     category: "Machine Learning",
     tech: "React, Tailwind, Python, Scikit-learn, Joblib",
@@ -31,13 +31,24 @@ const projects = [
   },
   {
     title: "Eco Track",
-    year: "2024",
+    year: "2025",
     description: "Machine learning model for greenhouse gas emission predictions using environmental data.",
     category: "Machine Learning",
     tech: "Python, Scikit-learn, Joblib, Pandas",
     live: "https://ghg-prediction.streamlit.app/",
     github: "https://github.com/Dhanam-patel/GHG-Prediction-Edunet-Green-Skill-Internship-",
     image: "/Projects/GHG.jpg",
+    bgColor: "bg-card/40",
+  },
+  {
+    title: "Legacy_V0",
+    year: "2024",
+    description: "Gaming platform with modern UI/UX, featuring game discovery and community features.",
+    category: "UI/UX Design & Dev",
+    tech: "React, Tailwind",
+    live: "https://legacy-v0.vercel.app/",
+    github: "https://github.com/Dhanam-patel/ArcadiaX---minigames",
+    image: "/Projects/Legacy_V0.jpg",
     bgColor: "bg-card/40",
   },
   {
@@ -51,17 +62,7 @@ const projects = [
     image: "/Projects/AFK_Tribe.jpg",
     bgColor: "bg-card/40",
   },
-  {
-    title: "ArcadiaX",
-    year: "2023",
-    description: "Gaming platform with modern UI/UX, featuring game discovery and community features.",
-    category: "UI/UX Design & Dev",
-    tech: "HTML, CSS, JavaScript",
-    live: "https://dhanam-patel.github.io/ArcadiaX---minigames/",
-    github: "https://github.com/Dhanam-patel/ArcadiaX---minigames",
-    image: "/Projects/ArcadiaX.jpg",
-    bgColor: "bg-card/40",
-  },
+
 ]
 
 
